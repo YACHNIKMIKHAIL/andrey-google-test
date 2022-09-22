@@ -1,0 +1,21 @@
+.tab {
+  border: 2px black solid;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  .button-tab {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .info-tab {
+    display: flex;
+    height: 90%;
+    justify-content: space-around;
+  }
+}
+

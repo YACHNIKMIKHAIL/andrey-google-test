@@ -1,0 +1,13 @@
+<div class="tab">
+  <div class="button-tab">
+    <button (click)=navigateService.navigateTo(0)>Income</button>
+    <button (click)=navigateService.navigateTo(1)>Outcome</button>
+    <button (click)=navigateService.navigateTo(2)>Loans</button>
+    <button (click)=navigateService.navigateTo(3)>Investments</button>
+  </div>
+  <div class="info-tab" *ngFor="let d of navigatorData">
+    <div>{{d.name.first}}{{d.name.last}}</div>
+    <div>{{d.address.split(',')[3]}}</div>
+  </div>
+</div>
+<button routerLink="">exit</button>
